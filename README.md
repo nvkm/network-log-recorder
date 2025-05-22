@@ -39,8 +39,9 @@ Replace these with your actual image paths or URLs
 md
 Copy
 Edit
-![Start Recording](./assets/start-recording.png)
-![Download HAR](./assets/download-logs.png)
+![image](https://github.com/user-attachments/assets/12943e84-910d-4297-97c6-20f8d5487962)
+![image](https://github.com/user-attachments/assets/07bcdd01-ca15-4750-980f-874649702b4c)
+
 🤝 Contributing
 Feel free to open issues or submit pull requests for improvements or features.
 
