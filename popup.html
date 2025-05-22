@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Network Call Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 15px;
+      background-color: #f9f9f9;
+      color: #333;
+      width: 400px; /* Set a fixed width for the body */
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #network-calls {
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ddd;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    .call {
+      margin-bottom: 10px;
+      padding: 8px;
+      border-bottom: 1px solid #eee;
+      background-color: #f9f9f9;
+      border-radius: 3px;
+    }
+
+    .call:last-child {
+      /* remove border on last element */
+      border-bottom: none;
+    }
+
+    button {
+      margin: 5px 0;
+      padding: 10px 15px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    /* Toggle Button Styles */
+    .toggle-switch {
+      display: inline-block;
+      width: 50px; /* Smaller width */
+      height: 20px; /* Smaller height */
+      position: relative;
+    }
+
+    .toggle-switch input {
+      display: none; /* Hide the default checkbox */
+    }
+
+    .slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .slider:before {
+      content: "";
+      position: absolute;
+      width: 16px; /* Smaller knob */
+      height: 16px; /* Smaller knob */
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+
+    input:checked + .slider {
+      background-color: #3498db;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(30px);
+    }
+  </style>
+</head>
+<body>
+  <h2>
+    Network Call Tracker
+    <label class="toggle-switch">
+      <input type="checkbox" id="toggle-tracking">
+      <span class="slider"></span>
+    </label>
+  </h2>
+  <button id="download-har">Download HAR File</button>
+  <button id="ai_load_case">AI Generate Load Test</button>
+  <script src="popup.js"></script>
+</body>
+</html>

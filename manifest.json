@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Network Call Tracker",
+  "version": "1.1",
+  "description": "Capture and log network calls without opening DevTools.",
+  "permissions": [
+    "webRequest",
+    "activeTab",
+    "scripting",
+    "storage",
+    "downloads"
+  ],
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
+  
