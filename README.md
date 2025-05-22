@@ -44,6 +44,3 @@ Edit
 
 🤝 Contributing
 Feel free to open issues or submit pull requests for improvements or features.
-
-📄 License
-This project is licensed under the MIT License.
