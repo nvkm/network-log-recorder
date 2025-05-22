@@ -34,11 +34,6 @@ When done, click Download Logs to save the network traffic as a .har file.
 You can clear the logs using the Clear Logs button at any time.
 
 📸 Screenshots
-Replace these with your actual image paths or URLs
-
-md
-Copy
-Edit
 ![image](https://github.com/user-attachments/assets/12943e84-910d-4297-97c6-20f8d5487962)
 ![image](https://github.com/user-attachments/assets/07bcdd01-ca15-4750-980f-874649702b4c)
 
